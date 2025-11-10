@@ -1,0 +1,27 @@
+<header [class.scrolled]="isScrolled">
+  <div class="nav-container">
+    <!-- Left: Logo + name -->
+    <div class="nav-left">
+      <div class="logo">
+        <img src="img/logo.png" alt="logo" />
+      </div>
+
+      <!-- Center: Menu -->
+      <nav class="nav-menu">
+        <a routerLink="/" routerLinkActive="active">Home</a>
+        <a routerLink="/profession" ariaCurrentWhenActive="page">Professional</a>
+        <a routerLink="/projects" routerLinkActive="active">Projects</a>
+        <a routerLink="/skills" ariaCurrentWhenActive="page">Skills</a>
+        <a href="https://github.com/ambujsolanki" target="_blank">GitHub</a>
+        <a routerLink="/contact" routerLinkActive="active" class="contact-btn">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Right: Profile -->
+    <div class="nav-right">
+      <div class="profile" title="Recruiter">
+        <img src="png/red.png" alt="Recruiter Profile" />
+      </div>
+    </div>
+  </div>
+</header>

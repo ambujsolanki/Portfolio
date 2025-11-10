@@ -1,0 +1,47 @@
+<section class="hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="/vdo/bg-video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1 class="hero-title">Ambuj Solanki — Full-Stack Developer</h1>
+    <p class="hero-sub">
+      Software professional with over 5 years of combined experience in software development and quality assurance. 
+      Skilled in building scalable, maintainable solutions using modern technologies such as TypeScript, Python, Java, and SAP HANA Cloud. 
+      Experienced in full-stack development, test automation, and cloud-based data solutions. 
+      Developed a custom dbt adapter for SAP HANA Cloud as part of academic and professional research at SAP, focusing on AI-assisted software development. 
+      Strong foundation in both backend and frontend frameworks, with a proven ability to work in agile environments, lead QA teams, and deliver reliable, high-quality software. 
+      Recently completed my Master’s in Applied Computer Science at SRH University Heidelberg, specializing in Business Computing (SAP).
+    </p>
+
+    <div class="hero-buttons">
+      <a class="btn primary" href="file/Ambuj_Solanki_Resume.pdf" target="_blank">▶ Resume</a>
+      <a class="btn secondary" href="https://www.linkedin.com/in/ambuj-solanki-96496a149/" target="_blank" rel="noopener">
+        ⓘ LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="top-picks">
+  <h2>Today's Top Picks for Recruiters</h2>
+  <div class="grid">
+    <div class="pick-card" *ngFor="let card of cards" (click)="navigateTo(card.route)">
+      <img [src]="card.image" [alt]="card.title" />
+      <h4>{{ card.title }}</h4>
+    </div>
+  </div>
+</section>
+
+<section class="continue">
+  <h2>Continue Watching</h2>
+  <div class="grid">
+    <div class="pick-card" *ngFor="let deck of decks" (click)="navigateTo(deck.route)">
+      <img [src]="deck.image" [alt]="deck.title" />
+      <h4>{{ deck.title }}</h4>
+    </div>
+  </div>
+</section>

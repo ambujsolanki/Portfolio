@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+/* global styles */
+:root{
+  --bg:#0b0f14;
+  --card:#101418;
+  --accent:#e50914; /* netflix red-ish */
+  --muted:#9aa3ad;
+  --text:#e6eef3;
+}
+
+html,body {
+  height:100%;
+  margin:0;
+  background: linear-gradient(180deg, var(--bg) 0%, #061018 100%);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.container{
+  margin:0 auto;
+
+}
+
+
+
+
+

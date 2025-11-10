@@ -1,0 +1,32 @@
+.work {
+  background: #111;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  padding: 100px 20px;
+}
+
+.work-card h1 {
+  color: #e50914;
+  font-size: 2rem;
+
+}
+
+.work-card {
+  background: #0a0a0a;
+  border: 1px solid rgba(229, 9, 20, 0.4);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 600px;
+  max-height: 160px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.3);
+  transition: all 0.3s ease;
+}
+
+.work-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(229, 9, 20, 0.6);
+}

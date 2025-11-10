@@ -1,0 +1,145 @@
+.contact-page {
+  background: #111;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 140px 20px 80px;
+  text-align: center;
+}
+
+/* === Profile Card === */
+.profile-card {
+  display: flex;
+  align-items: center;
+  background: #0a0a0a;
+  border-radius: 12px;
+  padding: 20px;
+  width: 380px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(229, 9, 20, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(229, 9, 20, 0.6);
+}
+
+.profile-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  border: 2px solid #e50914;
+}
+
+.profile-info h3 {
+  font-size: 1.6rem;
+  margin: 0;
+  color: #fff;
+}
+
+.role {
+  color: #ccc;
+  font-size: 1.1rem;
+  margin: 4px 0;
+}
+
+.desc {
+  font-size: 0.95rem;
+  color: #bbb;
+  line-height: 1.4;
+}
+
+.details {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 4px;
+}
+
+.linkedin {
+  display: inline-block;
+  background-color: #0077b5;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  margin-top: 10px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.linkedin img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  margin-right: 6px;
+  flex-shrink: 0;
+}
+
+.linkedin:hover {
+  background-color: #005b8f;
+}
+
+/* === Contact Section === */
+.reach-text {
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #0a0a0a;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-btn i {
+  font-size: 1.2rem;
+}
+
+.contact-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.6);
+  text-decoration: underline;
+}
+
+.email i {
+  color: #e50914;
+}
+
+.phone i {
+  color: #e50914;
+}
+
+/* === Coffee Line === */
+.coffee-line {
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.coffee-icon {
+  color: #f4b400;
+  font-size: 1.2rem;
+  margin-left: 5px;
+}

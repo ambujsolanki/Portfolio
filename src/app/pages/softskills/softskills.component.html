@@ -1,0 +1,12 @@
+<section class="softskills">
+  <h2 class="section-title">Soft Skills</h2>
+
+  <div class="skill-grid">
+    <div class="skill-card" *ngFor="let skills of softskills">
+      <img [src]="skills.image" alt="{{ skills.name }}" />
+      <div class="overlay">
+        <h3>{{ skills.name }}</h3>
+      </div>
+    </div>
+  </div>
+</section>

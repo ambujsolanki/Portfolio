@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  imports: [RouterOutlet, HeaderComponent],
+  template: `
+    <div class="container">
+      <app-header></app-header>
+      <router-outlet></router-outlet>
+    </div>
+  `
 })
-export class AppComponent {
-  title = 'netflix-portfolio';
-}
+export class AppComponent {}

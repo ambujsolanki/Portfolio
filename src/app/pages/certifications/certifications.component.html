@@ -1,0 +1,9 @@
+<section class="certifications">
+  <div class="cert-card" *ngFor="let cert of certificates">
+    <mat-icon class="blue-icon">{{ cert.icon }}</mat-icon>
+    <h3>{{ cert.name }} 
+      <a [href]="cert.link" target="_blank"><mat-icon class="link-icon">open_in_new</mat-icon></a>
+    </h3>
+    <p>{{ cert.institute }}</p>
+  </div>
+</section>

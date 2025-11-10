@@ -1,0 +1,12 @@
+<section class="hobbies">
+  <h2 class="section-title">My Hobbies</h2>
+
+  <div class="hobby-grid">
+    <div class="hobby-card" *ngFor="let hobby of hobbies">
+      <img [src]="hobby.image" alt="{{ hobby.name }}" />
+      <div class="overlay">
+        <h3>{{ hobby.name }}</h3>
+      </div>
+    </div>
+  </div>
+</section>

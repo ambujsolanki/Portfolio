@@ -1,0 +1,62 @@
+.certifications {
+  background: #0a0a0a;
+  color: #fff;
+  padding: 140px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;    /* prevents stretching */
+  gap: 40px;
+  min-height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #e50914 #0a0a0a;
+}
+
+/* Custom Scrollbar (WebKit) */
+.certifications::-webkit-scrollbar {
+  width: 10px;
+}
+.certifications::-webkit-scrollbar-thumb {
+  background-color: #e50914;
+  border-radius: 5px;
+}
+.certifications::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+.cert-card {
+  background: #111;
+  border: 1px solid rgba(229, 9, 20, 0.3);
+  border-radius: 16px;
+  width: 350px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 200px;            
+}
+
+.cert-card h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.cert-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(229, 9, 20, 0.6);
+}
+
+.blue-icon {
+  color: #00bfff;
+  font-size: 50px;
+  width: 45px;
+
+  height: 45px;
+  text-align: left;
+}
+
+.link-icon {
+  color: #e50914;
+  font-size: 22px;
+  vertical-align: middle;
+}

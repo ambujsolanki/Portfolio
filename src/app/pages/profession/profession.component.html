@@ -1,0 +1,41 @@
+<section class="profession">
+  <h1>🗓️ Work Experience & Education Timeline</h1>
+
+  <div class="timeline">
+    <div class="timeline-line"></div>
+
+    <div
+      class="timeline-item"
+      *ngFor="let item of timeline"
+      [class.left]="item.side === 'left'"
+      [class.right]="item.side === 'right'"
+    >
+      <div class="icon material-icons">{{ item.icon }}</div>
+
+        <div class="content">
+            <h3>{{ item.role }}</h3>
+            <span>{{ item.period }}</span>
+            <p><strong>{{ item.company }}</strong></p>
+
+            <!-- For working/student entries -->
+            <div *ngIf="item.techUsed">
+                <div class="tech-used">
+                <i class="material-icons">build</i> Tech Used:
+                </div>
+                <p *ngIf="item.techUsed" class="techused">
+                {{ item.techUsed }}
+                </p>
+            </div>
+
+            <p *ngIf="item.description" class="description">
+                <i class="material-icons desc-icon">signal_cellular_alt_1_bar</i>
+                {{ item.description }}
+            </p>
+        </div>
+    </div>
+
+    <div class="timeline-star" *ngFor="let item of start">
+      <div class="icon material-icons">{{ item.icon }}</div>
+    </div>
+  </div>
+</section>
