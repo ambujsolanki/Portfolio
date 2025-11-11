@@ -1,4 +1,4 @@
-import { Component, HostListener  } from '@angular/core';
+import { Component, ViewChild, ElementRef, AfterViewInit  } from '@angular/core';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class HomeComponent {
 
+  imgSrc: string = 'vdo/bg-gif.gif'
   constructor(private router: Router) {}
   cards = [
     { title: 'Work Permit', image: 'img/work.jpg', route: '/work' },
